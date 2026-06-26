@@ -30,7 +30,7 @@ cp .env.example .env
 ```
 Open `.env` and fill in your Gemini API key:
 ```env
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY= *********
 PORT=3000
 ```
 > **Note**: If no API key is provided, the service automatically falls back to the offline rules-based classifier. All endpoints remain fully functional.
