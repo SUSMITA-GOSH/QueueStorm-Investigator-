@@ -1,0 +1,18 @@
+{
+  "ticket_id": "T-001",
+  "relevant_transaction_id": null,
+  "evidence_verdict": "insufficient_data",
+  "case_type": "wrong_transfer",
+  "severity": "high",
+  "department": "dispute_resolution",
+  "agent_summary": "Customer reports mistakenly sending money to an incorrect recipient and requests assistance with recovery.",
+  "recommended_next_action": "Escalate to Dispute Resolution team for investigation into the alleged wrong transfer. Agent to verify transaction details and guide the customer on potential recovery steps, including contacting the recipient if identifiable.",
+  "customer_reply": "Thank you for reaching out. We understand you've reported sending money to an incorrect number and need assistance. We are escalating this to our specialized Dispute Resolution team for a thorough investigation. They will review the details and guide you on the next steps. Please allow some time for this process, and we will keep you informed.",
+  "human_review_required": true,
+  "confidence": 0.9,
+  "reason_codes": [
+    "wrong_transfer_reported",
+    "no_transaction_history",
+    "human_intervention_needed"
+  ]
+}
