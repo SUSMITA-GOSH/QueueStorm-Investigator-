@@ -1,0 +1,15 @@
+# Render deployment configuration
+# See: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: queuestorm-investigator
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: GEMINI_API_KEY
+        sync: false   # will be entered manually in Render dashboard
+    healthCheckPath: /health
