@@ -4,7 +4,18 @@ const { analyzeTicket } = require("./classifier");
 
 const app = express();
 app.use(express.json());
-
+// ─── GET / ──────────────────────────────────────────────────────────────────
+app.get("/", (req, res) => {
+  res.json({
+    service: "QueueStorm Investigator",
+    description: "bKash CRM Ticket Classifier — English, Bengali & Banglish",
+    status: "running",
+    endpoints: {
+      health:         "GET  /health",
+      analyze_ticket: "POST /analyze-ticket"
+    }
+  });
+});
 // ─── GET /health ────────────────────────────────────────────────────────────
 // Returns exactly {"status":"ok"}
 app.get("/health", (req, res) => {
